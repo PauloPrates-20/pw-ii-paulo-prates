@@ -10,7 +10,7 @@
     <?php
         $peso = 55;
         $altura = 1.75;
-        $imc = 55 / pow($altura, 2);
+        $imc = $peso / pow($altura, 2);
 
         if($imc < 18.5) {
             $classificacao = "Magreza";
