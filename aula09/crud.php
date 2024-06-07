@@ -79,5 +79,16 @@
     <tr>
         <td><?php echo $nome['id']; ?></td>
         <td><?php echo $nome['nome']; ?></td>
+        <td>
+            <a
+                href="?acao=editar
+                &id=<?php echo $nome['id']; ?>
+                &nome=<?php echo urlencode($nome['nome']); ?>"">
+                Editar
+            </a>
+            <a href="?acao=exluir&id=<?php echo $nome['id']; ?>">
+                Exlcuir
+            </a>
+        </td>
     </tr>
 </table>
