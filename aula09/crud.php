@@ -87,8 +87,10 @@
                 Editar
             </a>
             <a href="?acao=exluir&id=<?php echo $nome['id']; ?>">
-                Exlcuir
+                Excluir
             </a>
         </td>
     </tr>
+    <?php endforeach; ?>
 </table>
+<?php $db->close(); ?>
